@@ -9,8 +9,11 @@ export const Message = () => {
         const onMouseMove = ({ x, y }) => {
             setCoords({x,y})
         }
+      
+      
         window.addEventListener('mousemove', onMouseMove);
     
+      
       return () => {
           window.removeEventListener('mousemove', onMouseMove);
       }
