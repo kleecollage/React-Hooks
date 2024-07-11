@@ -1,11 +1,11 @@
 import { fireEvent, screen } from "@testing-library/dom"
 import { render } from "@testing-library/react"
-import { MultipleCustomHooks } from "../../../src/03-examples/MultipleCustomHooks"
-import { useFetch } from "../../../src/hooks/useFetch"
-import { useCounter } from "../../../src/hooks/useCounter"
+import { MultipleCustomHooks } from "../../src/03-examples/MultipleCustomHooks"
+import { useFetch } from "../../src/hooks/useFetch"
+import { useCounter } from "../../src/hooks/useCounter"
 
-jest.mock('../../../src/hooks/useFetch.js')
-jest.mock('../../../src/hooks/useCounter.js')
+jest.mock('../../src/hooks/useFetch.js')
+jest.mock('../../src/hooks/useCounter.js')
 
 describe('Prueba sobre el componente <MultipleCustomHooks/>', () => { 
     
